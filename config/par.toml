@@ -1,0 +1,9 @@
+rho = 0.05 # discount rate
+lam = 0.1 # step size
+alpha = 0.0 # curve internal
+beta = 0.0 # curve external
+eps = 0.3 # elasticity
+gamma = 50.0 # research cost, internal
+kappa = 20.0 # research cost, external
+eta = 2.5 # research curve
+chi = 1.5 # entry cost

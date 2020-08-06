@@ -1,0 +1,27 @@
+# q grid
+N = 128 # number of q grid points
+q_min = 0.2 # minimal q value
+q_max = 2.0 # maximal q value
+
+# value function solve
+v_delt = 0.05 # delt for value function solve
+v_upd = 0.7 # update for value function solve
+v_K = 10_000 # max iterations for value function solve
+v_per = 1_000 # output rate for value function solve
+v_tol = 1e-12 # convergence tolerance for value function solve
+sig_fact = 50 # steepness of sigmoid for smooth derivative
+
+# distribution solve
+d_delt = 0.2 # delt for distribution solve
+d_upd = 0.1 # update for distribution solve
+d_K = 20_000 # max iterations for distribution solve
+d_per = 2_000 # output rate for distribution solve
+d_tol = 1e-12 # convergence tolerance for distribution solve
+
+# simulation
+P = 10_000 # number of products in simulation
+seed = 920493234 # random seed for simulation
+T_burn = 1_000 # burn in time for simulation
+T_rec = 50 # recording time for simulation
+s_delt = 0.1 # delt for firm simulation
+P_max = 20 # maximum number of products (initial guess)
